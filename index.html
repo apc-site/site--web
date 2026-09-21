@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de l'Alliance du Peuple pour le Changement (APC), mouvement politique, social et humanitaire actif en Guinée et en Allemagne.">
+  <title>APC — Alliance du Peuple pour le Changement</title>
+  <style>
+    :root{--vert:#08783e;--vert-fonce:#04552c;--vert-clair:#eaf7f0;--blanc:#fff;--texte:#1f2937}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--texte);background:var(--blanc);line-height:1.6}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+    nav{max-width:1200px;margin:auto;padding:15px 25px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .logo{font-size:30px;font-weight:800;color:var(--vert)}
+    .logo span{display:block;font-size:10px;letter-spacing:.4px;color:#555}
+    nav ul{display:flex;list-style:none;gap:22px;flex-wrap:wrap}
+    nav a{color:var(--texte);text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--vert)}
+    .hero{min-height:82vh;display:flex;align-items:center;background:linear-gradient(120deg,rgba(4,85,44,.96),rgba(8,120,62,.83));color:#fff;padding:80px 25px}
+    .hero-content,.container{width:100%;max-width:1200px;margin:auto}
+    .hero small{text-transform:uppercase;letter-spacing:2px;font-weight:bold}
+    .hero h1{font-size:clamp(42px,7vw,76px);max-width:900px;line-height:1.05;margin:18px 0}
+    .hero p{max-width:720px;font-size:20px;margin-bottom:30px}
+    .btn{display:inline-block;background:#fff;color:var(--vert-fonce);padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px 10px 0 0}
+    .btn-outline{border:2px solid #fff;background:transparent;color:#fff}
+    section{padding:85px 25px}
+    .section-title{color:var(--vert);font-size:38px;margin-bottom:15px}
+    .intro{max-width:800px;font-size:18px;margin-bottom:40px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+    .card{padding:30px;border-radius:14px;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+    .card h3{color:var(--vert);margin-bottom:12px}
+    .light{background:var(--vert-clair)}
+    .countries{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .country{padding:40px;border-left:5px solid var(--vert);background:#fff;border-radius:10px}
+    .country h3{color:var(--vert);font-size:28px}
+    .cta{background:var(--vert-fonce);color:#fff;text-align:center}
+    .cta h2{font-size:40px;margin-bottom:15px}
+    .contact-form{max-width:700px;margin-top:30px}
+    input,textarea{width:100%;padding:15px;margin-bottom:15px;border:1px solid #ccc;border-radius:7px;font:inherit}
+    textarea{min-height:150px;resize:vertical}
+    button{background:var(--vert);color:#fff;padding:14px 25px;border:0;border-radius:7px;font-weight:bold;cursor:pointer}
+    footer{background:#07351f;color:#fff;padding:40px 25px;text-align:center}
+    footer strong{font-size:24px}
+    @media(max-width:800px){nav{flex-direction:column}nav ul{justify-content:center;font-size:14px}.cards,.countries{grid-template-columns:1fr}.hero{min-height:70vh}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">APC<span>Alliance du Peuple pour le Changement</span></div>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#actions">Nos actions</a></li>
+      <li><a href="#international">Allemagne & Guinée</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <small>Alliance du Peuple pour le Changement</small>
+    <h1>Ensemble pour le changement</h1>
+    <p>L'APC est un mouvement politique, social et humanitaire actif en Guinée et en Allemagne.</p>
+    <a class="btn" href="#apropos">Découvrir l'APC</a>
+    <a class="btn btn-outline" href="#actions">Nos actions</a>
+  </div>
+</section>
+<section id="apropos">
+  <div class="container">
+    <h2 class="section-title">Qui sommes-nous ?</h2>
+    <p class="intro">L'Alliance du Peuple pour le Changement (APC) est un mouvement politique, social et humanitaire qui souhaite contribuer à une nouvelle manière de faire de la politique, fondée sur la responsabilité, le dialogue, la participation citoyenne et la recherche de solutions concrètes aux préoccupations de la population.</p>
+  </div>
+</section>
+<section class="light" id="vision">
+  <div class="container">
+    <h2 class="section-title">Notre vision</h2>
+    <p class="intro">Contribuer à l'amélioration durable du bien-être de la population guinéenne et favoriser une société dans laquelle chaque citoyen peut participer au développement de son pays.</p>
+    <div class="cards">
+      <article class="card"><h3>Participation citoyenne</h3><p>Encourager le dialogue et la participation des citoyens aux questions qui concernent leur société.</p></article>
+      <article class="card"><h3>Solidarité</h3><p>Développer et soutenir des initiatives sociales et humanitaires en faveur des populations.</p></article>
+      <article class="card"><h3>Développement</h3><p>Contribuer aux réflexions et initiatives favorisant le développement social et économique de la Guinée.</p></article>
+    </div>
+  </div>
+</section>
+<section id="actions">
+  <div class="container">
+    <h2 class="section-title">Nos domaines d'action</h2>
+    <div class="cards">
+      <article class="card"><h3>Politique</h3><p>Promouvoir le dialogue, la responsabilité et la participation citoyenne dans la vie publique.</p></article>
+      <article class="card"><h3>Social</h3><p>Soutenir des initiatives qui répondent aux besoins sociaux et contribuent à améliorer les conditions de vie.</p></article>
+      <article class="card"><h3>Humanitaire</h3><p>Encourager des actions de solidarité et d'assistance destinées aux personnes et communautés qui en ont besoin.</p></article>
+    </div>
+  </div>
+</section>
+<section class="light" id="international">
+  <div class="container">
+    <h2 class="section-title">Une présence entre la Guinée et l'Allemagne</h2>
+    <p class="intro">L'APC souhaite également contribuer au renforcement des liens entre les Guinéens vivant en Guinée et ceux de la diaspora.</p>
+    <div class="countries">
+      <div class="country"><h3>🇬🇳 Guinée</h3><p>Actions politiques, sociales et humanitaires au service des populations et du développement.</p></div>
+      <div class="country"><h3>🇩🇪 Allemagne</h3><p>Mobilisation de la diaspora, échanges, solidarité et initiatives contribuant au développement de la Guinée.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="container">
+    <h2>Alliance du Peuple pour le Changement</h2>
+    <p>Faire de la politique autrement, agir pour le bien-être de la population et contribuer au changement par des actions concrètes.</p>
+    <a class="btn" href="#contact">Nous contacter</a>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Vous souhaitez obtenir des informations sur l'APC ou ses activités ? Envoyez-nous un message.</p>
+    <form class="contact-form">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+      <input type="text" name="objet" placeholder="Objet">
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <strong>APC</strong>
+  <p>Alliance du Peuple pour le Changement</p>
+  <p>Guinée • Allemagne</p><br>
+  <small>© 2026 APC — Tous droits réservés.</small>
+</footer>
+</body>
+</html>
